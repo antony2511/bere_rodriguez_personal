@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dra. Berenice Rodríguez | Medicina Estética y el Arte del Cuidado Coreano</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&amp;family=Manrope:wght@200;400;600;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "silk-white": "#F9F9F9",
+                        "sand": "#E5E1DA",
+                        "stone-gray": "#707070",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Cormorant Garamond", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F9F9F9;
+        }
+        .serif-title {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .section-fade {
+            background: linear-gradient(180deg, rgba(249,249,249,0) 0%, rgba(229,225,218,0.3) 100%);
+        }
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+    </style>
+</head>
+<body class="text-slate-900 selection:bg-primary/20">
+
+<!-- 1. HERO SECTION - La Gran Entrada -->
+<section class="relative min-h-screen flex flex-col">
+    <!-- Header Superior -->
+    <header class="absolute top-0 w-full z-50 bg-transparent">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-white">
+                    <span class="material-symbols-outlined text-3xl">medical_services</span>
+                </div>
+                <span class="text-lg font-light tracking-tight text-white">Dra. Berenice Rodríguez</span>
+            </div>
+
+            <!-- Menú de Navegación -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#" class="text-sm font-medium text-white transition-colors uppercase tracking-widest">Inicio</a>
+                <a href="metodo-vision.html" class="text-sm font-medium text-white transition-colors uppercase tracking-widest">Mi Visión</a>
+                <a href="#kbeauty" class="text-sm font-medium text-white transition-colors uppercase tracking-widest">K-Beauty</a>
+                <a href="#contacto" class="text-sm font-medium text-white transition-colors uppercase tracking-widest">Contacto</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <!-- Redes Sociales (hidden en mobile) -->
+                <div class="hidden md:flex items-center gap-3">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all backdrop-blur-sm">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+
+                    <!-- TikTok -->
+                    <a href="https://tiktok.com/@draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all backdrop-blur-sm">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://facebook.com/draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all backdrop-blur-sm">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/34123456789" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all backdrop-blur-sm">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Botón Hamburguesa (solo mobile) -->
+                <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all backdrop-blur-sm">
+                    <span class="material-symbols-outlined text-white">menu</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menú Mobile -->
+        <div id="mobileMenu" class="hidden md:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-lg z-40">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-6">
+                    <span class="text-lg font-light text-white">Menú</span>
+                    <button onclick="toggleMobileMenu()" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10">
+                        <span class="material-symbols-outlined text-white">close</span>
+                    </button>
+                </div>
+                <nav class="flex-1 flex flex-col items-center justify-center gap-8">
+                    <a href="#" onclick="toggleMobileMenu()" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Inicio</a>
+                    <a href="metodo-vision.html" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Mi Visión</a>
+                    <a href="#kbeauty" onclick="toggleMobileMenu()" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">K-Beauty</a>
+                    <a href="#contacto" onclick="toggleMobileMenu()" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Contacto</a>
+                </nav>
+                <div class="flex items-center justify-center gap-4 p-6">
+                    <a href="https://instagram.com/draberenice" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@draberenice" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/34123456789" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Hero Full-Width Image con Overlay -->
+    <div class="relative flex-1 flex items-end overflow-hidden">
+        <img alt="Dra. Berenice Rodríguez - Medicina Estética"
+             class="absolute inset-0 w-full h-full object-cover"
+             style="object-position: center 20%;"
+             src="../dra_Berenice_rodriguez.png"/>
+
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20"></div>
+
+        <!-- Contenido sobre la imagen -->
+        <div class="relative w-full px-6 pb-24 pt-32">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-xl">
+                    <!-- Título Principal -->
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white uppercase mb-6">
+                        DRA. BERENICE<br/>RODRÍGUEZ
+                    </h1>
+
+                    <!-- Subtítulo 1 -->
+                    <h2 class="serif-title text-2xl md:text-3xl text-white/95 italic font-light mb-6">
+                        Medicina Estética y el Arte del Cuidado Coreano
+                    </h2>
+
+                    <!-- Subtítulo 2 - Propuesta de Valor -->
+                    <p class="text-base md:text-lg text-white/90 font-light leading-relaxed mb-10">
+                        Fusionando la ciencia médica avanzada con la filosofía de belleza de Corea para resultados naturales y duraderos.
+                    </p>
+
+                    <!-- Botones CTA -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="metodo-vision.html" class="px-8 py-4 bg-white/90 backdrop-blur-sm text-slate-900 font-semibold tracking-wider uppercase text-sm hover:bg-white transition-all text-center border border-white/20">
+                            Descubre mi Visión
+                        </a>
+                        <a href="#kbeauty" class="px-8 py-4 bg-black text-white font-semibold tracking-wider uppercase text-sm hover:bg-slate-900 transition-all text-center">
+                            Mi Selección K-Beauty
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flecha Scroll Down -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <span class="material-symbols-outlined text-4xl text-white/70">expand_more</span>
+        </div>
+    </div>
+</section>
+
+<!-- 2. PHILOSOPHY & EXPERTISE - La Autoridad Nace de la Visión -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Contenido Izquierda -->
+            <div class="space-y-8">
+                <h2 class="serif-title text-4xl md:text-5xl leading-tight text-slate-900">
+                    MI FILOSOFÍA: BELLEZA DESDE LA <span class="italic">ESENCIA COREANA</span>
+                </h2>
+
+                <div class="space-y-6 text-lg text-stone-gray leading-relaxed font-light">
+                    <p>
+                        Mi enfoque trasciende la medicina estética tradicional. Creo firmemente que la verdadera belleza emerge de una piel sana, protegida y nutrida, una filosofía que he perfeccionado al integrar los principios de la dermatología avanzada con el milenario arte del cuidado de la piel coreano.
+                    </p>
+                    <p>
+                        Mi misión es guiarte hacia resultados que no solo transformen tu apariencia, sino que celebren tu bienestar, utilizando un método personalizado que prioriza la prevención y la armonía natural.
+                    </p>
+                </div>
+
+                <div class="pt-4">
+                    <a href="#trayectoria" class="inline-flex items-center gap-2 text-primary font-bold tracking-wider uppercase text-sm group hover:gap-4 transition-all">
+                        Conoce mi Trayectoria
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagen/Video Derecha -->
+            <div class="relative">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                    <img alt="Dra. Berenice en consultorio"
+                         class="w-full h-full object-cover grayscale-[15%]"
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMEGLGP4whNXbefAvU2hEUT-Xh8M7ENiLVFb4is3KQJMpH1QxiK6ohXnKYm0SNZOAzCkw2_NpiJQSa3MyCdkxPlO7ywx31lq5GWuN20qUXiZaWddsjkjschX4BYzB6VKgeD-s08HPpX68Vl4sLkyfvd-q18nYMC6rJ4fQoTscbg8zK4kxtps5FCVNmQ7slDE0HY9vQZOEn61VzBw2DYvk9FLqbyl7kkcWSyKn1QMEyoqmF850xqFcdh33VseVN05T0uKTItyRtcaI"/>
+                </div>
+
+                <!-- Quote decorativo -->
+                <div class="absolute -bottom-6 -right-6 bg-white p-8 rounded-xl shadow-xl border border-sand hidden lg:block">
+                    <p class="serif-title text-2xl italic text-slate-900">"La belleza es el<br/>equilibrio de la salud"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. THE K-METHOD - Su Metodología Única -->
+<section class="py-24 bg-sand/20">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Título de Sección -->
+        <div class="text-center mb-16">
+            <span class="text-xs font-bold tracking-[0.4em] text-stone-gray uppercase mb-4 block">Mi Método Único</span>
+            <h2 class="serif-title text-4xl md:text-5xl text-slate-900">
+                PIEL SANA, RESULTADOS EXCEPCIONALES
+            </h2>
+        </div>
+
+        <!-- Tres Tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tarjeta 1 -->
+            <div class="bg-white p-10 rounded-xl border border-sand shadow-sm hover:shadow-md transition-shadow">
+                <div class="text-primary mb-6">
+                    <span class="material-symbols-outlined text-5xl">biotech</span>
+                </div>
+                <h3 class="font-bold text-xl tracking-wide uppercase mb-4 text-slate-900">
+                    ANÁLISIS CLÍNICO<br/>AVANZADO
+                </h3>
+                <p class="text-stone-gray leading-relaxed font-light">
+                    Evaluación detallada para entender las necesidades únicas de tu piel y su barrera cutánea.
+                </p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-white p-10 rounded-xl border border-sand shadow-sm hover:shadow-md transition-shadow">
+                <div class="text-primary mb-6">
+                    <span class="material-symbols-outlined text-5xl">spa</span>
+                </div>
+                <h3 class="font-bold text-xl tracking-wide uppercase mb-4 text-slate-900">
+                    PROTOCOLOS<br/>PERSONALIZADOS K-BEAUTY
+                </h3>
+                <p class="text-stone-gray leading-relaxed font-light">
+                    Diseño de un régimen con tratamientos y productos coreanos seleccionados para tu perfil.
+                </p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-white p-10 rounded-xl border border-sand shadow-sm hover:shadow-md transition-shadow">
+                <div class="text-primary mb-6">
+                    <span class="material-symbols-outlined text-5xl">timeline</span>
+                </div>
+                <h3 class="font-bold text-xl tracking-wide uppercase mb-4 text-slate-900">
+                    SEGUIMIENTO &<br/>OPTIMIZACIÓN CONTINUA
+                </h3>
+                <p class="text-stone-gray leading-relaxed font-light">
+                    Acompañamiento constante para asegurar la evolución y mantenimiento de tu piel.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botón CTA -->
+        <div class="text-center mt-12">
+            <a href="metodo-vision.html" class="inline-block px-10 py-4 bg-slate-900 text-white font-semibold tracking-wider uppercase text-sm hover:bg-slate-800 transition-all">
+                Conoce mi Filosofía
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 4. CURACIÓN EXPERTA & ECOSISTEMA K-BEAUTY -->
+<section class="py-24 bg-gradient-to-br from-primary/5 to-sand/30" id="kbeauty">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Contenido Izquierda -->
+            <div class="space-y-8">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.4em] text-primary uppercase block mb-4">Sello de Confianza</span>
+                    <h2 class="serif-title text-4xl md:text-5xl text-slate-900 mb-8">
+                        MI SELLO DE CONFIANZA:<br/>
+                        <span class="font-semibold not-italic">K-BEAUTY COLOMBIA</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-6 text-lg text-stone-gray leading-relaxed font-light">
+                    <p class="text-slate-900 font-normal">
+                        Mi compromiso con la excelencia me llevó a curar la selección de productos de <span class="font-bold">K-Beauty Colombia</span>. Cada artículo ha sido rigurosamente evaluado bajo mi supervisión médica, garantizando su seguridad, eficacia y alineación con los estándares de la cosmética coreana.
+                    </p>
+
+                    <p class="serif-title text-2xl italic text-primary">
+                        "Más que una tienda, una extensión de mi consultorio."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Logo y CTA Derecha -->
+            <div class="bg-white p-12 rounded-2xl shadow-xl border border-sand/50 flex flex-col items-center justify-center text-center space-y-8">
+                <div class="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-7xl text-primary">storefront</span>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-3xl tracking-tight mb-2">K-BEAUTY COLOMBIA</h3>
+                    <p class="text-stone-gray text-sm uppercase tracking-widest">Curado por la Dra. Berenice</p>
+                </div>
+
+                <a href="https://korea.uclipcolombia.com/tienda" target="_blank" rel="noopener noreferrer" class="w-full px-8 py-4 bg-black text-white font-semibold tracking-wider uppercase text-sm hover:bg-slate-900 transition-all">
+                    Descubre mi Selección Oficial K-Beauty
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. CONNECT & LEARN - Redes Sociales y Blog -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Título de Sección -->
+        <div class="text-center mb-16">
+            <h2 class="serif-title text-4xl md:text-5xl text-slate-900 mb-4">
+                ÚLTIMOS CONSEJOS & CONEXIÓN EN REDES
+            </h2>
+            <p class="text-stone-gray font-light text-lg">Sígueme para más contenido educativo y tips de belleza</p>
+        </div>
+
+        <!-- Instagram/TikTok Feed - Carrusel de Videos -->
+        <div class="mb-20">
+            <div class="flex items-center justify-between mb-10">
+                <h3 class="font-bold text-2xl tracking-wide uppercase">Mis Consejos en Video</h3>
+                <a href="https://instagram.com/draberenice" target="_blank" class="inline-flex items-center gap-2 text-primary font-bold tracking-wider uppercase text-sm hover:gap-4 transition-all">
+                    Sígueme en @DraBerenice
+                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
+            </div>
+
+            <!-- Carrusel Container -->
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Carrusel Wrapper -->
+                <div class="overflow-hidden">
+                    <div id="carousel" class="flex transition-transform duration-500 ease-out gap-6">
+                        <!-- Video 1 -->
+                        <div class="min-w-full md:min-w-[calc(50%-12px)] group">
+                            <div class="bg-gradient-to-br from-primary/20 to-sand/40 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                                <div class="aspect-[9/16] max-h-[500px] relative cursor-pointer" onclick="openInstagramPost('https://www.instagram.com/reel/EXAMPLE1/')">
+                                    <!-- Placeholder con diseño de referencia -->
+                                    <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-primary/10 to-sand/30 p-8">
+                                        <span class="material-symbols-outlined text-7xl text-primary mb-4">video_library</span>
+                                        <p class="text-slate-900 font-bold text-lg mb-2 text-center">VIDEO 1</p>
+                                        <p class="text-stone-gray text-sm text-center">Rutina K-Beauty</p>
+                                    </div>
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <div class="bg-white rounded-full p-4">
+                                            <span class="material-symbols-outlined text-4xl text-primary">play_arrow</span>
+                                        </div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                                        <p class="text-white text-sm font-semibold">Rutina de Skincare Coreano</p>
+                                        <p class="text-white/80 text-xs">Los 5 pasos esenciales</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="min-w-full md:min-w-[calc(50%-12px)] group">
+                            <div class="bg-gradient-to-br from-sand/40 to-primary/20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                                <div class="aspect-[9/16] max-h-[500px] relative cursor-pointer" onclick="openInstagramPost('https://www.instagram.com/reel/EXAMPLE2/')">
+                                    <!-- Placeholder con diseño de referencia -->
+                                    <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-sand/30 to-primary/10 p-8">
+                                        <span class="material-symbols-outlined text-7xl text-primary mb-4">science</span>
+                                        <p class="text-slate-900 font-bold text-lg mb-2 text-center">VIDEO 2</p>
+                                        <p class="text-stone-gray text-sm text-center">Ingredientes Activos</p>
+                                    </div>
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <div class="bg-white rounded-full p-4">
+                                            <span class="material-symbols-outlined text-4xl text-primary">play_arrow</span>
+                                        </div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                                        <p class="text-white text-sm font-semibold">Ácido Hialurónico Explicado</p>
+                                        <p class="text-white/80 text-xs">Ciencia detrás del ingrediente</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="min-w-full md:min-w-[calc(50%-12px)] group">
+                            <div class="bg-gradient-to-br from-primary/20 to-sand/40 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                                <div class="aspect-[9/16] max-h-[500px] relative cursor-pointer" onclick="openInstagramPost('https://www.instagram.com/reel/EXAMPLE3/')">
+                                    <!-- Placeholder con diseño de referencia -->
+                                    <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-primary/10 to-sand/30 p-8">
+                                        <span class="material-symbols-outlined text-7xl text-primary mb-4">verified</span>
+                                        <p class="text-slate-900 font-bold text-lg mb-2 text-center">VIDEO 3</p>
+                                        <p class="text-stone-gray text-sm text-center">Mitos & Verdades</p>
+                                    </div>
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <div class="bg-white rounded-full p-4">
+                                            <span class="material-symbols-outlined text-4xl text-primary">play_arrow</span>
+                                        </div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                                        <p class="text-white text-sm font-semibold">Mitos de la Medicina Estética</p>
+                                        <p class="text-white/80 text-xs">Lo que debes saber</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 4 -->
+                        <div class="min-w-full md:min-w-[calc(50%-12px)] group">
+                            <div class="bg-gradient-to-br from-sand/40 to-primary/20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                                <div class="aspect-[9/16] max-h-[500px] relative cursor-pointer" onclick="openInstagramPost('https://www.instagram.com/reel/EXAMPLE4/')">
+                                    <!-- Placeholder con diseño de referencia -->
+                                    <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-sand/30 to-primary/10 p-8">
+                                        <span class="material-symbols-outlined text-7xl text-primary mb-4">healing</span>
+                                        <p class="text-slate-900 font-bold text-lg mb-2 text-center">VIDEO 4</p>
+                                        <p class="text-stone-gray text-sm text-center">Post-Tratamiento</p>
+                                    </div>
+                                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <div class="bg-white rounded-full p-4">
+                                            <span class="material-symbols-outlined text-4xl text-primary">play_arrow</span>
+                                        </div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                                        <p class="text-white text-sm font-semibold">Skincare Post-Tratamiento</p>
+                                        <p class="text-white/80 text-xs">Cuidados después del procedimiento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del Carrusel -->
+                <button onclick="prevSlide()" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg items-center justify-center hover:bg-primary hover:text-white transition-all z-10">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button onclick="nextSlide()" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg items-center justify-center hover:bg-primary hover:text-white transition-all z-10">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="flex justify-center gap-2 mt-6">
+                    <button onclick="goToSlide(0)" id="indicator-0" class="w-2 h-2 rounded-full bg-primary"></button>
+                    <button onclick="goToSlide(1)" id="indicator-1" class="w-2 h-2 rounded-full bg-stone-gray/30"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog/Artículos -->
+        <div>
+            <div class="flex items-center justify-between mb-10">
+                <h3 class="font-bold text-2xl tracking-wide uppercase">Artículos y Publicaciones</h3>
+                <a href="#" class="inline-flex items-center gap-2 text-primary font-bold tracking-wider uppercase text-sm hover:gap-4 transition-all">
+                    Explora mi Blog
+                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Artículo 1 -->
+                <article class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden bg-sand/20 mb-4">
+                        <img alt="Artículo"
+                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVPtO21iRLMMc9jvNBBYTHZqvOmGwIjFFIpTFeifnWUYvDr1FcdL7kyYIdMeZi3fBXX4XGXaXyPMLb8exiqLezbo8ayXGdinNpPye0leyWlqutRDdx7itYdBaiDDLMt1YShBDprhn2jDXiIGkdBWsE-oOxdeb33V6IHZ2WX4YOQbwFvO2qPpjYewfLL9tUDynhUH12NNZV8jYx1i4ZTMM4sHInmD8-GvojYztQs3_b_jJZLgQTWweMTO-jQKqht5xHM3PGxdeUf8g"/>
+                    </div>
+                    <span class="text-[10px] font-bold tracking-widest text-primary uppercase">Tendencias Médicas</span>
+                    <h4 class="serif-title text-xl italic mt-2 mb-2 leading-tight group-hover:text-primary transition-colors">
+                        El futuro de la bioestimulación celular
+                    </h4>
+                    <p class="text-sm text-stone-gray line-clamp-2">Un análisis profundo sobre las nuevas técnicas de rejuvenecimiento no invasivo.</p>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden bg-sand/20 mb-4">
+                        <img alt="Artículo"
+                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl6S9lhvUk7w-81ujpfJevBmOPN710q_71huYLontkk30kCFKS2Qlsgnh3nu5RJP_ZNAlwgMY7X51xwEPr8yNoBCDbp-1YiXnqSMKnFWs6RGI4U5JjkyfbSjmSF7UGamqNXwwERjTR7aZgevLsRbb8FG8oG8u5O_4LsAlZczeHk0VEu9kjyR1u38ukyiHd051XcMcsMT-2ebfwKUGaR8hs6KukRpPOf3RWsl-AgWSjmlPLTai44cEe4EnXwk2wrYjw9tMWwk9Yf3c"/>
+                    </div>
+                    <span class="text-[10px] font-bold tracking-widest text-primary uppercase">Dermatología Clínica</span>
+                    <h4 class="serif-title text-xl italic mt-2 mb-2 leading-tight group-hover:text-primary transition-colors">
+                        Preservación de la barrera cutánea
+                    </h4>
+                    <p class="text-sm text-stone-gray line-clamp-2">Por qué el exceso de limpieza puede ser tu enemigo silencioso.</p>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden bg-sand/20 mb-4">
+                        <img alt="Artículo"
+                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8v0agkmoJl5Iig--kWCiVxTBqi3a87C4zSsoIL9kX6wJfR0SX10KyJepD7JVU2fiPI8oJn2j8Pvji4bwC4LfTqwReFL__Q2u5G76nYDjcPHfpwPnCKFevmcPaUZM0geupd--ehJ9TaC8-Lk2T66f-KiGfx82pwTem3yY-U6w-AzI54OS2fUI4oj46MC3-dgO_DvVElcByvP_Jf-gnhM-u_9p26l0E6qiZVKD5rO1xaheO1KRucieEIK1DWVwFnwH0vL5GK6KifDQ"/>
+                    </div>
+                    <span class="text-[10px] font-bold tracking-widest text-primary uppercase">K-Beauty Science</span>
+                    <h4 class="serif-title text-xl italic mt-2 mb-2 leading-tight group-hover:text-primary transition-colors">
+                        La sinergia de los fermentos coreanos
+                    </h4>
+                    <p class="text-sm text-stone-gray line-clamp-2">Uso clínico de probióticos tópicos para acelerar la regeneración.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. FOOTER - El Cierre Profesional -->
+<footer class="bg-slate-900 text-white py-16" id="contacto">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Columna 1: Branding -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-3xl text-primary">medical_services</span>
+                    <span class="font-bold text-lg">Dra. Berenice Rodríguez</span>
+                </div>
+                <p class="text-white/60 text-sm font-light">
+                    Medicina Estética y el Arte del Cuidado Coreano
+                </p>
+            </div>
+
+            <!-- Columna 2: Navegación Rápida -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Navegación</h4>
+                <ul class="space-y-3 text-white/70 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Sobre Mí</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Servicios</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Contacto</h4>
+                <ul class="space-y-3 text-white/70 text-sm">
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                        <a href="mailto:contacto@draberenice.com" class="hover:text-white transition-colors">contacto@draberenice.com</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">phone</span>
+                        <a href="tel:+34123456789" class="hover:text-white transition-colors">+34 123 456 789</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">location_on</span>
+                        <span>Granada, España</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Sígueme</h4>
+                <div class="flex gap-3">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <span class="material-symbols-outlined text-lg">chat</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <span class="material-symbols-outlined text-lg">video_library</span>
+                    </a>
+                </div>
+                <p class="text-white/60 text-xs mt-4">@DraBerenice</p>
+            </div>
+        </div>
+
+        <!-- Copyright y Powered By -->
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/50 text-xs">
+            <p>© 2026 Dra. Berenice Rodríguez</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Aviso Legal</a>
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let currentSlide = 0;
+    const totalSlides = 2; // 2 slides (4 videos, 2 por vista)
+
+    function updateCarousel() {
+        const carousel = document.getElementById('carousel');
+        const isMobile = window.innerWidth < 768;
+        // En mobile: 100% por video
+        // En desktop: 50% por video, pero movemos 100% (2 videos) por slide
+        const slideWidth = isMobile ? 100 : 100;
+        carousel.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+
+        // Update indicators
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.getElementById(`indicator-${i}`);
+            if (indicator) {
+                indicator.className = i === currentSlide
+                    ? 'w-2 h-2 rounded-full bg-primary'
+                    : 'w-2 h-2 rounded-full bg-stone-gray/30';
+            }
+        }
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateCarousel();
+    }
+
+    function openInstagramPost(url) {
+        window.open(url, '_blank');
+    }
+
+    // Auto-play carousel (opcional)
+    setInterval(() => {
+        nextSlide();
+    }, 5000);
+
+    // Update on window resize
+    window.addEventListener('resize', updateCarousel);
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    }
+</script>
+
+</body></html>
