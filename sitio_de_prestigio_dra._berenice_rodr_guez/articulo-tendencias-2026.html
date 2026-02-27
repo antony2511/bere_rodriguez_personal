@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tendencias Médicas en Medicina Estética 2026 | Dra. Berenice Rodríguez</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#195de6',
+                        'silk-white': '#F9F9F9',
+                        sand: '#E5E1DA',
+                        'stone-gray': '#707070',
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'system-ui', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .serif-title {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .editorial-spacing p {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 selection:bg-primary/20">
+
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-sand/50">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="text-primary">
+                <span class="material-symbols-outlined text-3xl">medical_services</span>
+            </div>
+            <a href="index.html" class="text-lg font-light tracking-tight hover:text-primary transition-colors">Dra. Berenice Rodríguez</a>
+        </div>
+
+        <!-- Menú de Navegación -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">Inicio</a>
+            <a href="metodo-vision.html" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">Mi Visión</a>
+            <a href="index.html#kbeauty" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">K-Beauty</a>
+            <a href="index.html#contacto" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">Contacto</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <!-- Botón Hamburguesa (solo mobile) -->
+            <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-sand transition-all">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú Mobile -->
+    <div id="mobileMenu" class="hidden md:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-lg z-[100]">
+        <div class="flex flex-col h-full">
+            <div class="flex items-center justify-between p-6">
+                <span class="text-lg font-light text-white">Menú</span>
+                <button onclick="toggleMobileMenu()" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10">
+                    <span class="material-symbols-outlined text-white">close</span>
+                </button>
+            </div>
+            <nav class="flex-1 flex flex-col items-center justify-center gap-8">
+                <a href="index.html" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Inicio</a>
+                <a href="metodo-vision.html" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Mi Visión</a>
+                <a href="index.html#kbeauty" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">K-Beauty</a>
+                <a href="index.html#contacto" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Contacto</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Article Hero -->
+<article class="pt-32 pb-20">
+    <div class="max-w-4xl mx-auto px-6">
+        <!-- Breadcrumb -->
+        <div class="flex items-center gap-2 text-xs uppercase tracking-widest text-stone-gray mb-8">
+            <a href="index.html" class="hover:text-primary transition-colors">Inicio</a>
+            <span>/</span>
+            <span class="text-primary">Tendencias Médicas</span>
+        </div>
+
+        <!-- Category -->
+        <p class="text-xs font-bold tracking-widest text-primary uppercase mb-6">Tendencias Médicas</p>
+
+        <!-- Title -->
+        <h1 class="serif-title text-5xl md:text-6xl leading-tight italic font-light text-slate-900 mb-8">
+            Tendencias médicas en medicina estética 2026
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-xl md:text-2xl text-stone-gray font-light mb-12 leading-relaxed">
+            Un análisis profundo sobre las nuevas técnicas de rejuvenecimiento no invasivo que están revolucionando la medicina estética.
+        </p>
+
+        <!-- Meta -->
+        <div class="flex items-center gap-6 pb-12 border-b border-sand mb-12">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary">person</span>
+                </div>
+                <div>
+                    <p class="font-semibold text-sm">Dra. Berenice Rodríguez</p>
+                    <p class="text-xs text-stone-gray">Medicina Estética</p>
+                </div>
+            </div>
+            <div class="text-xs text-stone-gray">
+                <p>Febrero 27, 2026</p>
+                <p>8 min lectura</p>
+            </div>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="aspect-video rounded-2xl overflow-hidden mb-16 shadow-2xl">
+            <img src="dra_berenice_profesional.png" alt="Tendencias médicas" class="w-full h-full object-cover"/>
+        </div>
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none editorial-spacing">
+            <p class="text-lg leading-relaxed">
+                La medicina estética está viviendo una revolución silenciosa. En 2026, asistimos a un cambio de paradigma donde la prioridad ya no es solo "verse bien", sino <strong>preservar la salud cutánea a largo plazo</strong> mientras se buscan resultados naturales y armoniosos.
+            </p>
+
+            <h2 class="serif-title text-3xl italic font-semibold mt-12 mb-6">El auge de los bioestimuladores</h2>
+            <p class="text-lg leading-relaxed">
+                Los bioestimuladores de colágeno han dejado de ser una opción secundaria para convertirse en el tratamiento estrella. A diferencia de los rellenos tradicionales, estos productos estimulan la producción natural de colágeno, ofreciendo resultados que mejoran con el tiempo y lucen completamente naturales.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Productos como el ácido poli-L-láctico (PLLA) y la hidroxiapatita cálcica están ganando terreno frente a los ácidos hialurónicos tradicionales, especialmente en pacientes que buscan <em>prevención activa</em> del envejecimiento.
+            </p>
+
+            <h2 class="serif-title text-3xl italic font-semibold mt-12 mb-6">Tecnología de ultrasonido microfocalizado</h2>
+            <p class="text-lg leading-relaxed">
+                El HIFU (High-Intensity Focused Ultrasound) ha evolucionado. Las nuevas generaciones de equipos ofrecen mayor precisión, menos molestias y resultados visibles desde la primera sesión. Esta tecnología permite trabajar en capas profundas de la piel sin cirugía, logrando un efecto lifting progresivo y natural.
+            </p>
+
+            <h2 class="serif-title text-3xl italic font-semibold mt-12 mb-6">Medicina regenerativa: PRP y exosomas</h2>
+            <p class="text-lg leading-relaxed">
+                El plasma rico en plaquetas (PRP) ya no es novedad, pero su combinación con <strong>exosomas</strong> está marcando la diferencia. Los exosomas son vesículas microscópicas que transportan información celular y actúan como mensajeros de regeneración, potenciando los resultados del PRP tradicional.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Esta combinación se está utilizando con éxito en tratamiento de cicatrices de acné, rejuvenecimiento facial y capilar, con resultados que superan las expectativas de tratamientos previos.
+            </p>
+
+            <h2 class="serif-title text-3xl italic font-semibold mt-12 mb-6">Personalización mediante IA</h2>
+            <p class="text-lg leading-relaxed">
+                La inteligencia artificial está permitiendo crear protocolos completamente personalizados. Mediante análisis de imagen tridimensional y algoritmos predictivos, podemos anticipar cómo envejecerá cada rostro y diseñar estrategias preventivas específicas para cada paciente.
+            </p>
+
+            <h2 class="serif-title text-3xl italic font-semibold mt-12 mb-6">Mi visión profesional</h2>
+            <p class="text-lg leading-relaxed">
+                Como médico estético, creo firmemente que estas tendencias no son solo avances tecnológicos, sino un <strong>cambio cultural</strong> en cómo entendemos el cuidado de la piel. Estamos dejando atrás la era de los rostros "trabajados" para entrar en una nueva era de belleza consciente, donde la salud cutánea es la verdadera protagonista.
+            </p>
+            <p class="text-lg leading-relaxed">
+                El futuro de la medicina estética es <em>preventivo, personalizado y científicamente riguroso</em>. Y ese futuro ya está aquí.
+            </p>
+        </div>
+
+        <!-- Author CTA -->
+        <div class="mt-20 p-8 bg-sand/20 rounded-2xl">
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-5xl text-primary">person</span>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h3 class="font-bold text-xl mb-2">Dra. Berenice Rodríguez</h3>
+                    <p class="text-stone-gray mb-4">Médico especialista en Medicina Estética, con certificación en Dermocosmética Avanzada y K-Beauty Medical.</p>
+                    <a href="metodo-vision.html" class="inline-flex items-center gap-2 text-primary font-semibold text-sm uppercase tracking-widest hover:gap-4 transition-all">
+                        Conoce mi visión
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Blog -->
+        <div class="mt-12 text-center">
+            <a href="index.html#blog" class="inline-flex items-center gap-2 text-stone-gray text-sm uppercase tracking-widest hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Volver a artículos
+            </a>
+        </div>
+    </div>
+</article>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-16" id="contacto">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Columna 1: Branding -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-3xl text-primary">medical_services</span>
+                    <span class="font-bold text-lg">Dra. Berenice Rodríguez</span>
+                </div>
+                <p class="text-white/60 text-sm font-light">
+                    Medicina Estética y el Arte del Cuidado Coreano
+                </p>
+            </div>
+
+            <!-- Columna 2: Navegación Rápida -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Navegación</h4>
+                <ul class="space-y-3 text-white/70 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="metodo-vision.html" class="hover:text-white transition-colors">Mi Visión</a></li>
+                    <li><a href="index.html#kbeauty" class="hover:text-white transition-colors">K-Beauty</a></li>
+                    <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Contacto</h4>
+                <ul class="space-y-3 text-white/70 text-sm">
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                        <a href="mailto:contacto@draberenice.com" class="hover:text-white transition-colors">contacto@draberenice.com</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">phone</span>
+                        <a href="tel:+34123456789" class="hover:text-white transition-colors">+34 123 456 789</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">location_on</span>
+                        <span>Granada, España</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Sígueme</h4>
+                <div class="flex gap-3">
+                    <a href="https://instagram.com/draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <span class="material-symbols-outlined text-lg">chat</span>
+                    </a>
+                </div>
+                <p class="text-white/60 text-xs mt-4">@DraBerenice</p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/50 text-xs">
+            <p>© 2026 Dra. Berenice Rodríguez</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Aviso Legal</a>
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    }
+</script>
+
+</body>
+</html>
