@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mi Trayectoria | Dra. Berenice Rodríguez</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#195de6',
+                        'silk-white': '#F9F9F9',
+                        sand: '#E5E1DA',
+                        'stone-gray': '#707070',
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'system-ui', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .serif-title {
+            font-family: 'Cormorant Garamond', serif;
+        }
+    </style>
+</head>
+
+<body class="text-slate-900 selection:bg-primary/20">
+
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-sand/50">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="text-primary">
+                <span class="material-symbols-outlined text-3xl">medical_services</span>
+            </div>
+            <a href="index.html" class="text-lg font-light tracking-tight hover:text-primary transition-colors">Dra. Berenice Rodríguez</a>
+        </div>
+
+        <!-- Menú de Navegación -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">Inicio</a>
+            <a href="metodo-vision.html" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">Mi Visión</a>
+            <a href="mi-trayectoria.html" class="text-sm font-medium text-primary transition-colors uppercase tracking-widest">Trayectoria</a>
+            <a href="index.html#kbeauty" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">K-Beauty</a>
+            <a href="index.html#contacto" class="text-sm font-medium text-slate-900 transition-colors uppercase tracking-widest">Contacto</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <!-- Botón Hamburguesa (solo mobile) -->
+            <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-sand transition-all">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Menú Mobile -->
+<div id="mobileMenu" class="hidden md:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-lg z-[100]">
+    <div class="flex flex-col h-full">
+        <div class="flex items-center justify-between p-6">
+            <span class="text-lg font-light text-white">Menú</span>
+            <button onclick="toggleMobileMenu()" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10">
+                <span class="material-symbols-outlined text-white">close</span>
+            </button>
+        </div>
+        <nav class="flex-1 flex flex-col items-center justify-center gap-8">
+            <a href="index.html" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Inicio</a>
+            <a href="metodo-vision.html" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Mi Visión</a>
+            <a href="mi-trayectoria.html" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Trayectoria</a>
+            <a href="index.html#kbeauty" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">K-Beauty</a>
+            <a href="index.html#contacto" class="text-2xl font-medium text-white transition-colors uppercase tracking-widest">Contacto</a>
+        </nav>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-20 bg-gradient-to-b from-sand/20 to-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-xs font-bold tracking-widest text-primary uppercase mb-6">Mi Trayectoria</p>
+            <h1 class="serif-title text-5xl md:text-6xl leading-tight italic font-light text-slate-900 mb-8">
+                Un camino dedicado a la excelencia
+            </h1>
+            <p class="text-xl text-stone-gray font-light max-w-3xl mx-auto">
+                Mi formación combina la rigurosidad de la medicina occidental con la sabiduría del cuidado coreano,
+                creando un enfoque único en medicina estética.
+            </p>
+        </div>
+
+        <!-- Photo -->
+        <div class="max-w-md mx-auto mb-20">
+            <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img src="dra_berenice_profesional.png" alt="Dra. Berenice Rodríguez" class="w-full h-full object-cover"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formación Académica -->
+<section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="serif-title text-4xl italic font-semibold text-slate-900 mb-4">Formación Académica</h2>
+            <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="space-y-12">
+            <!-- Medicina General -->
+            <div class="flex gap-8 items-start group">
+                <div class="flex-shrink-0 w-32 text-right">
+                    <p class="text-2xl font-bold text-primary">2018</p>
+                    <p class="text-xs text-stone-gray uppercase tracking-widest">Pregrado</p>
+                </div>
+                <div class="flex-shrink-0 flex flex-col items-center">
+                    <div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20"></div>
+                    <div class="w-0.5 h-full bg-sand mt-2"></div>
+                </div>
+                <div class="flex-1 pb-12">
+                    <div class="bg-sand/20 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                        <h3 class="font-bold text-xl mb-2">Médico Cirujano</h3>
+                        <p class="text-primary font-semibold mb-4">Universidad Metropolitana de Barranquilla</p>
+                        <p class="text-stone-gray leading-relaxed">
+                            Formación integral en ciencias médicas con énfasis en anatomía, fisiología y patología.
+                            Desarrollo de habilidades clínicas y quirúrgicas bajo estándares internacionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Medicina Estética -->
+            <div class="flex gap-8 items-start group">
+                <div class="flex-shrink-0 w-32 text-right">
+                    <p class="text-2xl font-bold text-primary">2021</p>
+                    <p class="text-xs text-stone-gray uppercase tracking-widest">Postgrado</p>
+                </div>
+                <div class="flex-shrink-0 flex flex-col items-center">
+                    <div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20"></div>
+                    <div class="w-0.5 h-full bg-sand mt-2"></div>
+                </div>
+                <div class="flex-1 pb-12">
+                    <div class="bg-sand/20 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-3 mb-3">
+                            <span class="material-symbols-outlined text-3xl text-primary">school</span>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1">Máster en Medicina Estética</h3>
+                                <p class="text-primary font-semibold mb-4">Universidad de Granada, España</p>
+                            </div>
+                        </div>
+                        <p class="text-stone-gray leading-relaxed mb-4">
+                            Especialización avanzada en técnicas de rejuvenecimiento facial y corporal, medicina regenerativa,
+                            y tratamientos mínimamente invasivos. Formación práctica en los últimos avances en bioestimuladores,
+                            toxina botulínica y rellenos dérmicos.
+                        </p>
+                        <ul class="text-sm text-stone-gray space-y-2">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Anatomía facial aplicada a medicina estética
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Protocolos de seguridad y manejo de complicaciones
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Medicina regenerativa y celular
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diplomado Rejuvenecimiento -->
+            <div class="flex gap-8 items-start group">
+                <div class="flex-shrink-0 w-32 text-right">
+                    <p class="text-2xl font-bold text-primary">2022</p>
+                    <p class="text-xs text-stone-gray uppercase tracking-widest">Diplomado</p>
+                </div>
+                <div class="flex-shrink-0 flex flex-col items-center">
+                    <div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20"></div>
+                    <div class="w-0.5 h-full bg-sand mt-2"></div>
+                </div>
+                <div class="flex-1 pb-12">
+                    <div class="bg-sand/20 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                        <h3 class="font-bold text-xl mb-2">Diplomado en Rejuvenecimiento Facial Avanzado</h3>
+                        <p class="text-primary font-semibold mb-4">Instituto Internacional de Medicina Estética</p>
+                        <p class="text-stone-gray leading-relaxed">
+                            Perfeccionamiento en técnicas de lifting no quirúrgico, hilos tensores PDO,
+                            y protocolos personalizados de rejuvenecimiento integral.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificación K-Beauty -->
+            <div class="flex gap-8 items-start group">
+                <div class="flex-shrink-0 w-32 text-right">
+                    <p class="text-2xl font-bold text-primary">2023</p>
+                    <p class="text-xs text-stone-gray uppercase tracking-widest">Certificación</p>
+                </div>
+                <div class="flex-shrink-0 flex flex-col items-center">
+                    <div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20"></div>
+                    <div class="w-0.5 h-full bg-sand mt-2"></div>
+                </div>
+                <div class="flex-1 pb-12">
+                    <div class="bg-sand/20 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                        <h3 class="font-bold text-xl mb-2">Certificación en Dermocosmética Coreana Avanzada</h3>
+                        <p class="text-primary font-semibold mb-4">Seoul Medical Institute, Corea del Sur</p>
+                        <p class="text-stone-gray leading-relaxed">
+                            Inmersión en la filosofía K-Beauty desde una perspectiva médica. Formación en ingredientes activos
+                            coreanos, protocolos de tratamiento facial, y medicina preventiva oriental aplicada a la piel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formación continua -->
+            <div class="flex gap-8 items-start group">
+                <div class="flex-shrink-0 w-32 text-right">
+                    <p class="text-2xl font-bold text-primary">2024</p>
+                    <p class="text-xs text-stone-gray uppercase tracking-widest">Actualización</p>
+                </div>
+                <div class="flex-shrink-0 flex flex-col items-center">
+                    <div class="w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20"></div>
+                </div>
+                <div class="flex-1">
+                    <div class="bg-sand/20 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                        <h3 class="font-bold text-xl mb-2">Curso Avanzado en Medicina Regenerativa</h3>
+                        <p class="text-primary font-semibold mb-4">American Academy of Aesthetic Medicine</p>
+                        <p class="text-stone-gray leading-relaxed">
+                            Actualización en técnicas de PRP de última generación, terapia con exosomas,
+                            y aplicaciones clínicas de factores de crecimiento en medicina estética.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Áreas de Expertise -->
+<section class="py-20 bg-sand/10">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="serif-title text-4xl italic font-semibold text-slate-900 mb-4">Áreas de Expertise</h2>
+            <p class="text-stone-gray max-w-2xl mx-auto">Especialidades en las que he desarrollado experiencia clínica comprobada</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Expertise 1 -->
+            <div class="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-2xl text-primary">face_retouching_natural</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Rejuvenecimiento Facial</h3>
+                <p class="text-sm text-stone-gray">Bioestimuladores, toxina botulínica, rellenos dérmicos y protocolos combinados</p>
+            </div>
+
+            <!-- Expertise 2 -->
+            <div class="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-2xl text-primary">science</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Medicina Regenerativa</h3>
+                <p class="text-sm text-stone-gray">PRP, exosomas, factores de crecimiento y terapias celulares</p>
+            </div>
+
+            <!-- Expertise 3 -->
+            <div class="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-2xl text-primary">spa</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Dermocosmética K-Beauty</h3>
+                <p class="text-sm text-stone-gray">Protocolos coreanos, ingredientes fermentados y cuidado preventivo</p>
+            </div>
+
+            <!-- Expertise 4 -->
+            <div class="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-2xl text-primary">healing</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Tratamiento de Cicatrices</h3>
+                <p class="text-sm text-stone-gray">Acné, queloides, estrías y cicatrices post-quirúrgicas</p>
+            </div>
+
+            <!-- Expertise 5 -->
+            <div class="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-2xl text-primary">water_drop</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Hidratación Profunda</h3>
+                <p class="text-sm text-stone-gray">Mesoterapia, skin boosters y tratamientos de hidratación avanzada</p>
+            </div>
+
+            <!-- Expertise 6 -->
+            <div class="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <span class="material-symbols-outlined text-2xl text-primary">blur_on</span>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Hiperpigmentación</h3>
+                <p class="text-sm text-stone-gray">Melasma, manchas solares y unificación del tono de piel</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Membresías y Certificaciones -->
+<section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="serif-title text-4xl italic font-semibold text-slate-900 mb-4">Membresías Profesionales</h2>
+            <p class="text-stone-gray max-w-2xl mx-auto">Afiliaciones que garantizan actualización constante y práctica ética</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex items-start gap-4 p-6 bg-sand/10 rounded-xl">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary">verified</span>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-1">Sociedad Española de Medicina Estética</h3>
+                    <p class="text-sm text-stone-gray">Miembro activo desde 2021</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-sand/10 rounded-xl">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary">verified</span>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-1">American Academy of Aesthetic Medicine</h3>
+                    <p class="text-sm text-stone-gray">Miembro internacional desde 2022</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-sand/10 rounded-xl">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary">verified</span>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-1">Asociación Colombiana de Medicina Estética</h3>
+                    <p class="text-sm text-stone-gray">Miembro fundador regional</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-sand/10 rounded-xl">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary">verified</span>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-1">International Society of Dermatology</h3>
+                    <p class="text-sm text-stone-gray">Miembro certificado desde 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filosofía Personal -->
+<section class="py-20 bg-gradient-to-b from-sand/20 to-white">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-white p-12 rounded-2xl shadow-xl">
+            <div class="text-center mb-8">
+                <span class="material-symbols-outlined text-6xl text-primary mb-4 block">favorite</span>
+                <h2 class="serif-title text-3xl italic font-semibold text-slate-900 mb-4">Mi Compromiso</h2>
+            </div>
+            <p class="text-lg text-stone-gray leading-relaxed text-center mb-6">
+                "La medicina estética no se trata de cambiar quién eres, sino de realzar tu mejor versión.
+                Mi compromiso es ofrecer tratamientos basados en evidencia científica, respetando siempre
+                la anatomía natural y priorizando la salud sobre la estética."
+            </p>
+            <p class="text-center text-sm font-semibold text-slate-900">— Dra. Berenice Rodríguez</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Final -->
+<section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="serif-title text-4xl italic font-semibold text-slate-900 mb-6">¿Listo para comenzar tu transformación?</h2>
+        <p class="text-lg text-stone-gray mb-8 max-w-2xl mx-auto">
+            Cada paciente es único. Agenda una valoración personalizada para diseñar el tratamiento ideal para ti.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html#contacto" class="px-8 py-4 bg-primary text-white font-semibold tracking-wider uppercase text-sm hover:bg-primary/90 transition-all rounded-lg">
+                Agendar Consulta
+            </a>
+            <a href="metodo-vision.html" class="px-8 py-4 bg-white border-2 border-primary text-primary font-semibold tracking-wider uppercase text-sm hover:bg-primary/5 transition-all rounded-lg">
+                Conoce mi Visión
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-16" id="contacto">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Columna 1: Branding -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-3xl text-primary">medical_services</span>
+                    <span class="font-bold text-lg">Dra. Berenice Rodríguez</span>
+                </div>
+                <p class="text-white/60 text-sm font-light">
+                    Medicina Estética y el Arte del Cuidado Coreano
+                </p>
+            </div>
+
+            <!-- Columna 2: Navegación Rápida -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Navegación</h4>
+                <ul class="space-y-3 text-white/70 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="metodo-vision.html" class="hover:text-white transition-colors">Mi Visión</a></li>
+                    <li><a href="mi-trayectoria.html" class="hover:text-white transition-colors">Trayectoria</a></li>
+                    <li><a href="index.html#kbeauty" class="hover:text-white transition-colors">K-Beauty</a></li>
+                    <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Contacto</h4>
+                <ul class="space-y-3 text-white/70 text-sm">
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                        <a href="mailto:contacto@draberenice.com" class="hover:text-white transition-colors">contacto@draberenice.com</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">phone</span>
+                        <a href="tel:+34123456789" class="hover:text-white transition-colors">+34 123 456 789</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg">location_on</span>
+                        <span>Granada, España</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-4">Sígueme</h4>
+                <div class="flex gap-3">
+                    <a href="https://instagram.com/draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/draberenice" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-all">
+                        <span class="material-symbols-outlined text-lg">chat</span>
+                    </a>
+                </div>
+                <p class="text-white/60 text-xs mt-4">@DraBerenice</p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/50 text-xs">
+            <p>© 2026 Dra. Berenice Rodríguez</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Aviso Legal</a>
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    }
+</script>
+
+</body>
+</html>
